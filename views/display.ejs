@@ -1,0 +1,33 @@
+<html>
+  <head>
+  	<title>My Cool Blog</title>
+  </head>
+  <body>
+    <h1>My Cool Blog Posts <%=category%></h1>
+
+      <% for (var i = 0; i < data.length; i++) { %>
+
+        <div><a href="/individual?id=<%=data[i]._id%>"><%=data[i].title%></a></div>
+
+      <% } %>
+
+	<hr />
+
+	<a href="/category?category=school">School Posts</a><br />
+	<a href="/category?category=personal">Personal Posts</a>
+
+	<hr />
+	
+	Search:  
+	<form action="/search" method="GET">
+		<input type="text" name="search"><input type="submit" value="Find It">
+	</form>
+
+	<hr />
+	
+      <a href="/post.html">Make Post</a>
+      
+    
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+  <!-- [{"title":"Another blog post","category":"school","description":"Hello People","timestamp":1585015418886,"_id":"u0VxeM6WOSk4Ylod"}] -->
+  	<title>My Cool Blog</title>
+  </head>
+  <body>
+    <h1>My Cool Blog</h1>
+
+      <% for (var i = 0; i < data.length; i++) { %>
+
+        <div>
+	        <h2><%=data[i].title%></h2>
+	        Category: <%=data[i].category%><br />
+	        Description: <%-data[i].description%><br />
+        </div>
+
+      <% } %>
+
+      <a href="/">Back</a>
+
+  </body>
+</html>
