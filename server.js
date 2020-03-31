@@ -25,7 +25,7 @@ app.get('/search', function(req, res) {
 
 	//db.find({description: searchregex}).sort({ timestamp: 1 }).exec(function (err, docs) {
 		//db.find({}, function(err, docs) {
-		  console.log(docs);
+		  //console.log(docs);
 		  //res.send(docs);
 
 		  var datatopass = {data:docs, category: "Search " + searchterm};
